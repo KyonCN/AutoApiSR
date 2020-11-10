@@ -4,13 +4,13 @@ name: update refresh_token
 on: 
   release:
     types: [published]
-  push:
-    tags:
-    - 'v*'
+  #push:
+ #   tags:
+  #  - 'v*'
   #  branches: 
   #    - master
-  schedule:
-    - cron: "50 0 * * *"
+ # schedule:
+#  - cron: "50 0 * * *"
   #watch:
   #  types: [started]
    
