@@ -2,6 +2,7 @@
 name: update refresh_token
 
 on: 
+  workflow_dispatch:
   release:
     types: [published]
   push:
@@ -13,7 +14,7 @@ on:
     - cron: "50 0 * * *"
   #watch:
   #  types: [started]
-  workflow_dispatch:
+
    
 jobs:
   build:
