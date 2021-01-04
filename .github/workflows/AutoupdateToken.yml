@@ -1,19 +1,10 @@
 #更新refresh_token
 name: update refresh_token
 
-on: 
-  workflow_dispatch: 
-  release:
-    types: [published]
-  push:
-    tags:
-    - 'v*'
-  #  branches: 
-  #    - master
+on:
+  workflow_dispatch:
   schedule:
-    - cron: "50 0 * * *"
-  #watch:
-  #  types: [started]
+    - cron: "0 0 */1 * *"
     
 
 
