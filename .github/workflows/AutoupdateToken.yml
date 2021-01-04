@@ -2,7 +2,7 @@
 name: update refresh_token
 
 on: 
-  workflow_dispatch:
+  workflow_dispatch: master
   release:
     types: [published]
   push:
